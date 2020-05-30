@@ -41,12 +41,12 @@ def won?(board)
   while j < WIN_COMBINATIONS.length do
     if  array[j][0] == "X" && array[j][1] == "X" && array[j][2] == "X"
         winner = [WIN_COMBINATIONS[j][0], WIN_COMBINATIONS[j][1], WIN_COMBINATIONS[j][2]]
-        puts winner.to_a
+        return winner
     elsif array[j][0] == "O" && array[j][1] == "O" && array[j][2] == "O"
         winner = [WIN_COMBINATIONS[j][0], WIN_COMBINATIONS[j][1], WIN_COMBINATIONS[j][2]]
-        puts winner.to_a
+        return winner
     else
-        false
+        return false
     end
     j += 1
 end
