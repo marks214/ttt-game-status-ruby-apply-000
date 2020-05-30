@@ -45,11 +45,11 @@ def won?(board)
     elsif array[j][0] == "O" && array[j][1] == "O" && array[j][2] == "O"
         winner = [WIN_COMBINATIONS[j][0], WIN_COMBINATIONS[j][1], WIN_COMBINATIONS[j][2]]
         return winner
-    else
-      return false
     end
     j += 1
-end
+  end
+
+  return false
 
 end
 
