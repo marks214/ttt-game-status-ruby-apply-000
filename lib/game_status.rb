@@ -77,3 +77,16 @@ def draw?(board)
     return false
   end
 end
+
+def over?(board)
+if draw?(board) == true
+  return true
+elsif full?(board) == true
+  return true
+else
+  return false
+end
+
+def winner(board)
+
+end
