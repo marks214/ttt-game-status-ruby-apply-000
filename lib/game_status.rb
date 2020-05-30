@@ -83,6 +83,8 @@ if draw?(board) == true
   return true
 elsif full?(board) == true
   return true
+elsif won?(board) != false
+  return true
 else
   return false
 end
