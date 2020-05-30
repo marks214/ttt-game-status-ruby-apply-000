@@ -59,7 +59,7 @@ def full?(board)
     if board[i] == "X" || board[i] == "O"
       i += 1
     else
-      false 
+      false
       break
     end
 
@@ -67,5 +67,3 @@ def full?(board)
       true
     end
   end
-      
-  
