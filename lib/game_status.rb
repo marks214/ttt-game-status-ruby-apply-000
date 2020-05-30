@@ -86,6 +86,7 @@ elsif full?(board) == true
 else
   return false
 end
+end
 
 def winner(board)
 
