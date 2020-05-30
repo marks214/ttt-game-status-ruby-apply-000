@@ -116,17 +116,12 @@ def winner(board)
     while j < WIN_COMBINATIONS.length do
       if  array[j][0] == "X" && array[j][1] == "X" && array[j][2] == "X"
           winner = [WIN_COMBINATIONS[j][0], WIN_COMBINATIONS[j][1], WIN_COMBINATIONS[j][2]]
+          return "X"
       elsif array[j][0] == "O" && array[j][1] == "O" && array[j][2] == "O"
           winner = [WIN_COMBINATIONS[j][0], WIN_COMBINATIONS[j][1], WIN_COMBINATIONS[j][2]]
+          return "O"
       end
       j += 1
     end
-
-  if winner == ["X", "X", "X"]
-    return "X"
-  elsif winner == ["O", "O", "O"]
-    return "O"
-  else
     return nil
-  end
 end
