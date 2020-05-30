@@ -79,17 +79,22 @@ def draw?(board)
 end
 
 def over?(board)
-if draw?(board) == true
-  return true
-elsif full?(board) == true
-  return true
-elsif won?(board) != false
-  return true
-else
-  return false
-end
+  if draw?(board) == true
+    return true
+  elsif full?(board) == true
+    return true
+  elsif won?(board) != false
+    return true
+  else
+    return false
+  end
 end
 
 def winner(board)
-
+  if won?(board) == ["X", "X", "X"]
+    return "X"
+  if won?(board) == ["O", "O", "O"]
+    return "O"
+  else 
+    return nil
 end
