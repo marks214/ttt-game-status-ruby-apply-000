@@ -52,3 +52,20 @@ def won?(board)
 end
 
 end
+
+def full?(board)
+  i = 0
+  while i < board.length do
+    if board[i] == "X" || board[i] == "O"
+      i += 1
+    else
+      false 
+      break
+    end
+
+    if i == 8
+      true
+    end
+  end
+      
+  
