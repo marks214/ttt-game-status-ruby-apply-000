@@ -95,6 +95,6 @@ def winner(board)
     return "X"
   if won?(board) == ["O", "O", "O"]
     return "O"
-  else 
+  else
     return nil
 end
