@@ -46,7 +46,7 @@ def won?(board)
         winner = [WIN_COMBINATIONS[j][0], WIN_COMBINATIONS[j][1], WIN_COMBINATIONS[j][2]]
         return winner
     else
-        return false
+        false
     end
     j += 1
 end
